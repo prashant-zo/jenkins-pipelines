@@ -18,9 +18,13 @@ pipeline {
         sh 'node --version'
       }
     }
-    stage('Database Check')
+    stage('Database Check') {
+      agent {
+        docker { image 'postgres:13-alpine' }
+      }
       steps {
         sh 'psql --version'
       }
+    }
   }
 }
