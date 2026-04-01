@@ -1,0 +1,13 @@
+pipeline {
+  agent {
+    docker { image 'node:18-alphine' }
+  }
+
+  stage {
+    stage('test') {
+      steps {
+        sh 'node --version'
+      }
+    }
+  }
+}
