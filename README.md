@@ -1,4 +1,4 @@
-# Jenkins pipelines — Helios DevOps
+# Jenkins pipelines — DevOps
 
 Declarative Jenkins pipeline examples for learning and reuse: single-agent and multi-stage pipelines with per-stage Docker agents.
 
